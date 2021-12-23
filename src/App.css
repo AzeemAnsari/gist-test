@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+html {
+  font-size: 62.5%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
-
-.App-header {
-  background-color: #282c34;
+.main-wrap {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.container {
+  padding: 0 5rem;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #333;
+}
+footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+.github-ac {
+  line-height: normal;
+}
+.github-ac a {
+  display: flex;
+}
+.search-input,
+.no-data.ant-alert,
+.success-data.ant-alert {
+  margin: 3rem auto 0;
+  width: 50rem;
+  max-width: 100%;
+}
+.blank-wrap {
+  margin-top: 20vh;
+}
+.blank-wrap,
+.blank-wrap h2 {
+  color: rgb(209, 217, 230);
+  line-height: 8rem;
+  font-size: 6rem;
+  text-align: center;
+}
+.blank-wrap svg {
+  font-size: 10rem;
+  transform: rotate(-30deg);
+}
+.no-data {
+  text-align: center;
+  font-size: 3rem;
+  display: block;
+  margin-top: 5rem;
+}
+.loading.ant-spin-spinning {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 3rem;
+}
+.search-result-wrap {
+  margin-top: 3rem;
+}
+.result-card-wrap.ant-card {
+  margin: 2rem auto 3rem;
+}
+.file-type {
+  margin: 1.5rem auto;
+}
+.file-list li {
+  transition: 0.4s linear;
+}
+.file-list li:hover {
+  background-color: #f7f7fa;
+}
+.forks-list {
+  margin-top: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive Code */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  .search-input {
+    width: 50rem;
+    max-width: 100%;
+    margin: 2rem auto 0;
+  }
+  .blank-wrap,
+  .blank-wrap h2 {
+    font-size: 3rem;
+    line-height: normal;
   }
 }
