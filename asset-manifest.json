@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ce3bf5c7.css",
+    "main.js": "/static/js/main.e1b82b75.js",
+    "static/media/logo_azeem.png": "/static/media/logo_azeem.25d4c3669f9edce6be01.png",
+    "index.html": "/index.html",
+    "main.ce3bf5c7.css.map": "/static/css/main.ce3bf5c7.css.map",
+    "main.e1b82b75.js.map": "/static/js/main.e1b82b75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce3bf5c7.css",
+    "static/js/main.e1b82b75.js"
+  ]
+}
