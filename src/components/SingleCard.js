@@ -21,7 +21,7 @@ const SingleCard = ({ singleGist }) => {
     setForksLoading(true);
     if (id !== '') {
       await axios
-        .get(`https://api.github.com/gists${id}`)
+        .get(`https://api.github.com/gists/${id}`)
         .then((res) => {
           console.log(res.data);
           setForksData(res.data);
@@ -42,7 +42,7 @@ const SingleCard = ({ singleGist }) => {
       title={singleGist.description || 'No Description Available'}
       extra={
         !showForks ? (
-          <Button type="primary" onClick={() => getForks(`/${singleGist.id}`)}>
+          <Button type="primary" onClick={() => getForks(singleGist.id)}>
             {forksLoading ? 'Loading...' : 'Show Forks'}
           </Button>
         ) : (

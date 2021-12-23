@@ -25,7 +25,7 @@ const SearchInput = () => {
       axios
         .get(`https://api.github.com/users/${value}/gists`, {
           headers: {
-            Authorization: 'token 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',
+            Authorization: 'token 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',
           },
         })
         .then((res) => {
