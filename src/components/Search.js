@@ -23,11 +23,7 @@ const SearchInput = () => {
     } else {
       setLoading(true);
       axios
-        .get(`https://api.github.com/users/${value}/gists`, {
-          headers: {
-            Authorization: 'token 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',
-          },
-        })
+        .get(`https://api.github.com/users/${value}/gists`)
         .then((res) => {
           //   console.log(res.data);
           if (!res.data.length || res.message === 'Not Found') {

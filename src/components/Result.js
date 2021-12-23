@@ -10,7 +10,7 @@ const Result = ({ data, username }) => {
         type="success"
         className="success-data"
       />
-      <Card title={`Showing result for ${username}`} className="result-card-wrap">
+      <Card title={`Showing result for ${data[0].owner.login}`} className="result-card-wrap">
         {data.map((item) => {
           return <SingleCard key={item.id} singleGist={item} />;
         })}
