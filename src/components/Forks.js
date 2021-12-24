@@ -1,8 +1,8 @@
-import { Avatar, Image, List, Card, Typography } from 'antd';
+import { Avatar, List, Typography } from 'antd';
 import { BiGitRepoForked } from 'react-icons/bi';
 
 export const Forks = ({ forks }) => {
-  const forksList = forks.forks || [];
+  const forksList = forks.forks.slice(0, 3) || [];
   // console.log(forksList);
   return (
     <div className="forks-list">
